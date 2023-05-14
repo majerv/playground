@@ -1,6 +1,6 @@
 # Axon Saga demo
 
-THis small project demonstrates how to use Sagas with the [Axon framework](https://docs.axoniq.io/reference-guide/).
+This small project demonstrates how to use Sagas with the [Axon framework](https://docs.axoniq.io/reference-guide/).
 
 ## Prerequisites
 * Download the [Axon server](https://developer.axoniq.io/download)
