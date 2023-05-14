@@ -20,8 +20,11 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	implementation 'org.axonframework:axon-spring-boot-starter:4.7.2'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	implementation('org.axonframework:axon-spring-boot-starter:4.7.2') {
+//		exclude group: 'org.axonframework', module: 'axon-server-connector' // to use simple event bus, see: https://docs.axoniq.io/reference-guide/axon-framework/events/event-bus-and-event-store
+	}
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'

@@ -20,6 +20,25 @@ public class SagaConfiguration {
         return new InMemorySagaStore(); // default is JpaSagaStore
     }
 
+//    @Primary
+//    @Bean
+//    public EventBus eventBus() {
+//        return SimpleEventBus.builder().build();
+//    }
+
+//    @Bean
+//    public EventStore eventStore(EventStorageEngine storageEngine) {
+//        return EmbeddedEventStore.builder()
+//                .storageEngine(storageEngine)
+//                .build();
+//    }
+//
+//    // The InMemoryEventStorageEngine stores each event in memory.
+//    @Bean
+//    public EventStorageEngine storageEngine() {
+//        return new InMemoryEventStorageEngine();
+//    }
+
     /*@Autowired
     public void configure(EventProcessingConfigurer configurer) {
         configurer.registerPooledStreamingEventProcessor
